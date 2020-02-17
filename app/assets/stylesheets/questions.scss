@@ -1,3 +1,36 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$yellow: #EDE88F;
+
+.form {
+  height: 45px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: lighter;
+  font-family: arial;
+}
+
+.answer {
+  background: $yellow;
+}
+
+.question, .answer {
+  border-left: 6px solid #B0B5A9;
+  font-size: 24px;
+  font-family: arial;
+  padding: 24px 0 24px 18px;
+}
+
+#answer-link {
+  text-decoration: none;
+  color: #838C78;
+  font-size: 16px;
+  padding: 60px 0;
+}
+
+#coach #question {
+  padding-left: 120px;
+}

@@ -2,4 +2,19 @@
 <!-- first just echo back user's question -->
 <!-- that was @question when @question was = params[:question] in controller -->
 <!-- eventually do coach logic -->
-<p><%= @answer %></p>
+<div class="question">
+  <p><%= @question %>
+  <div id="question">
+    <strong>--- You</strong></p>
+  </div>
+</div>
+<br>
+<div class="answer">
+  <p><%= @answer %>
+    <div id="coach">
+      <strong>--- Your Coach</strong></p>
+    </div>
+</div>
+<div id ="answer-link" class="answer-link">
+  <%= link_to "Ask Another Question", ask_path, :style=>'font-family: sans-serif;''color: #838C78;''text-decoration: none;' 'font-size: 32px' %>
+</div>
